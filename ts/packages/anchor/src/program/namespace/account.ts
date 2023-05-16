@@ -16,8 +16,8 @@ import { Idl, IdlAccountDef } from "../../idl.js";
 import { Coder, BorshCoder } from "../../coder/index.js";
 import { Subscription, Address, translateAddress } from "../common.js";
 import { AllAccountsMap, IdlAccounts } from "./types.js";
-import * as pubkeyUtil from "../../utils/pubkey.js";
 import * as rpcUtil from "../../utils/rpc.js";
+import * as pubkeyUtil from "../../utils/pubkey.js";
 
 export default class AccountFactory {
   public static build<IDL extends Idl>(
